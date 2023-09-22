@@ -1,0 +1,14 @@
+.top-right-0001{
+    position: static !important;
+}
+.top-right-0001::before,.top-right-0001::after{ 
+    background-color: var(--accent) !important;
+    top: -20em !important;
+    left: 60vw !important;
+    
+}
+.top-right-0001::after{
+    top: -30em !important;
+    left: 30vw !important;
+    background-color: var(--secondary101, orange) !important;
+}

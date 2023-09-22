@@ -1,0 +1,10 @@
+@media (min-width:40em) {
+    .columns-two-bs{
+        columns: 2;
+    }
+    
+}
+
+.content-▲{
+    content: '▲';
+}

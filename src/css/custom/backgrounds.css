@@ -1,0 +1,18 @@
+.background-accent{
+    color: var(--white);
+    background-color: var(--accent);
+}
+.background-primary{
+    --background-main: rgb(207, 207, 247);
+    background-color: var(--background-main);
+}
+.background-secondary{
+    color: var(--white);
+    background-color: var(--secondary);
+}
+.border-none{
+    border: none;
+}
+.background-accent-solid{
+    background-color: var(--accent-202);
+}

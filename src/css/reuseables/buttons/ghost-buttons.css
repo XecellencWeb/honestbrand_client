@@ -1,0 +1,14 @@
+.ghost-btn-primary, .ghost-btn-accent,.ghost-btn-secondary{
+    background-color: transparent;
+    border-radius: 1em;
+    font-weight: 700;
+}
+
+.ghost-btn-primary{
+    border: 2px solid var(--primary);
+    color: var(--primary);
+}
+.ghost-btn-secondary{
+    border: 2px solid var(--secondary-202);
+    color: var(--secondary-202);
+}

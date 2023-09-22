@@ -1,0 +1,75 @@
+.btn-group-0001{
+    position: absolute;
+    width: min(70% , 62em);
+    top: clamp(2.5em,2em + 5vw, 7em);
+    right: 0;
+}
+.search-0001{
+    fill: var(--white);
+    margin-right: 3em;
+}
+.search-0001-ds{
+    display: none ;
+}
+footer .search-0001-ds{
+    --radius: 1em;
+    display: flex;
+}
+footer .search-0001-ds :is(.search-0001){
+    margin: 0;
+    display: block;
+
+}
+footer .search-0001-ds :is(button[type=submit]){
+    border-top-right-radius: var(--radius);
+    border-bottom-right-radius: var(--radius);
+    position: relative;
+    left: -1em;
+}
+.search-0001-ds > :is(button[type=submit]):is(:hover,:focus){
+    transform:  scale(1)!important;
+}
+footer .search-0001-ds :is(input),.search-0001 :is(input){
+    outline: none;
+    border-top-left-radius: var(--radius);
+    border-bottom-left-radius: var(--radius);
+}
+@media (width >= 50em) {
+    .search-0001-ds{
+        --radius: 1em;
+        display: flex;
+    }
+    .search-0001-ds :is(.search-0001){
+        margin: 0;
+        display: block;
+
+    }
+    .search-0001-ds :is(button[type=submit]){
+        border-top-right-radius: var(--radius);
+        border-bottom-right-radius: var(--radius);
+        position: relative;
+        left: -1em;
+    }
+    .search-0001-ds :is(input){
+        outline: none;
+        border-top-left-radius: var(--radius);
+        border-bottom-left-radius: var(--radius);
+    }
+    .search-0001{
+        display: none;
+    }
+}
+@media (min-width: 30em) and (max-width:59.999em) {
+    .btn-group-0001{
+        top: .5em
+    }
+    .search-0001{
+        display: block;
+    }
+    .search-0001-ds{
+        display: none ;
+    }
+    footer .search-0001-ds{
+        display: flex;
+    }
+}

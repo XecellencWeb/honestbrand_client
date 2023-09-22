@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;1,100;1,500&family=REM:ital,wght@0,900;1,900&display=swap');
+
+.logo-0001{
+    line-height: 1.1;
+    padding-inline-start: 1rem;
+    font-family: 'rem', 'courier new';
+    font-size: min(12vw,5rem);
+    color: var(--white);
+
+}
+
+.grid-col{
+    grid-auto-flow: column;
+}

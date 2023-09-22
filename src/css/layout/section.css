@@ -1,0 +1,22 @@
+.section{
+    margin-block:10rem;
+}
+
+.justify-text{
+    text-align: justify !important;
+}
+.left-spaced{
+    padding-left: .2em;
+}
+
+.section:target{
+    color: red !important;
+}
+
+.before\:w-120::before{
+    width: 30rem;
+}
+
+.before\:h-120::before{
+    height: 30rem;
+}

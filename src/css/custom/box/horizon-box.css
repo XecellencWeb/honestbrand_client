@@ -1,0 +1,24 @@
+.horizon--box{
+    --gap: 3em;
+    position: relative;
+    width: 100%;
+    padding: var(--gap);
+    display: grid;
+    grid-auto-columns: 30em;
+    grid-auto-flow: column;
+    gap: var(--gap);
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: inline mandatory;
+    scroll-padding-inline: var(--gap);
+}
+.horizon--box > *{
+    scroll-snap-align: start;
+}
+.wrapper--box{
+    margin-block: 10em;
+}
+.some--margin-inline{
+    width: 100%;
+    padding-inline: 5em;
+}

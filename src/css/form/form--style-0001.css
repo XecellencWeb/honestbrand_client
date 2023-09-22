@@ -1,0 +1,140 @@
+.form--style-0001{
+    --accent: hsla(0, 100%, 50%, 0.582);
+    --bgcolor: rgba(0, 0, 0, 0.705);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--bgcolor);
+    width: 100%;
+    min-height: 100vh;
+    z-index: 200000;
+    padding-top:5em;
+}
+.close{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 3000000;
+    appearance: none;
+    font-size: 2rem;
+    background-color: var(--accent);
+    color: white;
+    width: 3em;
+    height: 3em;
+   
+}
+.close::before{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    content: 'X';
+}
+
+.close:checked + div, .close:checked{
+    display: none;
+}
+.form--style-0001  :is(h2,h1,h3){
+    color: var(--accent) ;
+    margin: 0;
+}
+.form--style-0001 > form{
+    position: relative;
+    width: 90%;
+    min-height: 50vh;
+    padding: 5em 2em 2em;
+    margin: 0 !important;
+
+}
+.input--group,.btn--group{
+    padding: 0;
+    margin-block: 2em;
+    width: 100%;
+}
+
+.input--group > *{
+    width: 100%;
+    margin: 0;
+    margin-block: 1em;
+}
+.input--group > div{
+    display: grid;
+    grid-template-columns: 1fr;
+    position: relative;
+}
+.input--group > div > *{
+    margin: 0;
+}
+.--suggest--question>button{
+    all: unset;
+    padding-left: .5rem;
+    color: var(--color);
+    cursor: pointer;
+}
+.--suggest--question>button:is(:hover,:focus){
+    text-decoration: underline;
+}
+.--suggest--question{
+    --color: blue;
+    position: relative;
+    top: -1em;
+    padding: 0;
+    opacity: .7;
+}
+
+.input--number_group{
+    display: flex;
+    margin-bottom: 10em;
+}
+.rounded-corners{
+    border-radius: 2em;
+}
+.--textmessage{
+    opacity: .7;
+    padding: 0;
+    margin-bottom: 1em;
+}
+.--code_reset > button{
+    all: unset;
+    padding-inline: 1rem;
+    cursor: pointer;
+}
+.--code_reset{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--background-main);
+    opacity: 1;
+    font-size: 1.2rem;
+    margin: 0 !important;
+}
+
+.input--number_group > *{
+    width: 100%;
+}
+.--remove-symbol::-webkit-inner-spin-button, .--remove-symbol::-webkit-outer-spin-button{
+    appearance: none;
+    margin: 0;
+    opacity: 0;
+}
+.--top-right{
+    position: absolute;
+    top: 50%;
+    right: .5em;
+    transform: translateY(-50%);
+}
+.btn--group{
+    display: flex;
+    gap: 1em;
+}
+.btn--group > *{
+    width: 100%;
+    margin: 0;
+}
+.btn--group > *.small{
+    width: 25%;
+}

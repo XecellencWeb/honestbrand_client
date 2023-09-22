@@ -1,0 +1,8 @@
+@import url('loading_1.css');
+
+.grid-cols-auto{
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr)) ;
+}
+.font-ultimate{
+    font-weight: 1000;
+}

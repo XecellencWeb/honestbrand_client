@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;1,100;1,500&family=REM:ital,wght@0,900;1,900&display=swap');
+
+.bold-0001,.bold-0002{
+    font-family: 'rem', cursive;
+    font-size: 5em;
+    line-height: 1 !important;
+}
+.font-rem{
+    font-family: 'rem', cursive;
+}
+.bold-0002{
+    font-size: 2rem;
+    margin-left: clamp(1.5rem,1vw + .5rem, 2em);
+}
+.outstanding-0001{
+    margin-block: 1em !important;
+}
+.contrast-0001{
+    isolation: isolate;
+    background-color: transparent !important;
+    position: relative;
+}
+.contrast-0001::after{
+    top: -25%;
+    left: -15%;
+    z-index: -1;
+    content: '';
+    position: absolute;
+    filter: blur(.5em);
+    width: 100%;
+    height: 150%;
+    background-color: hsl(240 96% 73%/.3);
+}
+.bold-0101{
+    font-family: 'rem' , cursive;
+    font-size: 2.2rem;
+}
+.bold-1010{
+    font-family: 'rem', cursive;
+    padding-bottom: 1em;
+}

@@ -1,0 +1,9 @@
+.rating-parent{
+    display: flex;
+    flex-direction: row-reverse;
+    --rating: 3;
+}
+
+.rating-child[data-selected=true], .rating-child[data-selected=true] ~ .rating-child{
+    fill: gold;
+}

@@ -1,0 +1,13 @@
+.inline{
+    display: inline-block;
+}
+.primary{
+    color: var(--white) !important;
+}
+.secondary{
+    color: var(--secondary, rgb(235, 167, 42)) !important;
+}
+
+.peer\/one:checked ~ .peer-checked\/one\:hidden{
+    display: hidden;
+}

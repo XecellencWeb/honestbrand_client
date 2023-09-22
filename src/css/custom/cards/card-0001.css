@@ -1,0 +1,38 @@
+.card-0001{
+    --radius: 1em;
+    --radi: calc(var(--radius) - .2em);
+    --height: 15em;
+    border-radius: var(--radius);
+    display:flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    box-shadow: 0 0 2em -1.5em var(--default);
+    
+}
+.card-0001 > .one{
+    border-top-left-radius: var(--radi);
+    border-top-right-radius: var(--radi);
+    width: 100%;
+    height: var(--height);
+}
+.card-0001 > .one > div{
+    width: 100%;
+    background: var(--accent-soft);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    border-top-left-radius: var(--radi);
+    border-top-right-radius: var(--radi);
+}
+.card-0001 > .two{
+    line-height: 2.5;
+    border-bottom-left-radius: var(--radi);
+    border-bottom-right-radius: var(--radi);
+    width: 100%;
+    height: var(--height);
+}
+.card-0001 > .two  button{
+    font-size: 1.3rem;
+}

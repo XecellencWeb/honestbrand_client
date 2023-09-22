@@ -1,0 +1,64 @@
+.header-section{
+    --background-main:hsl(240 97% 74%/.3);
+    --flex: column;
+    isolation: isolate;
+    position: relative;
+    display: flex;
+    overflow-x: clip;
+    height: 90vh;
+    flex-direction: var(--flex);
+    background-color: var(--background-main);
+    width:100%;
+    align-items: center;
+    animation: sunshine 5s forwards;
+    margin-bottom: 10em;
+}
+
+@keyframes sunshine {
+    100%{  
+     background-color: rgb(124, 124, 253);;
+    }
+}
+@media (min-width:50rem) {
+    .header-section{
+       height: 90vh;
+    }
+    
+}
+.heading-contents > .two{
+    width: 50em;
+    position: absolute;
+    top: 7em;
+    left:min(100vw - 23em, 80em ) ;
+    z-index: 1;
+    height: 50em;
+}
+.heading-contents > .two > img{
+    width: 100%;
+    height: 100%;
+}
+.headings{
+    --background-main: hsl(240 97% 74%/.3);
+    background-color: var(--background-main);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    animation: sunshine 5s forwards;
+}
+.heading-contents{
+    width: min(90%, 100em);
+    justify-content: space-between;
+}
+.heading-contents > .one{
+    width: min(100%, 50em) ;
+    position: relative;
+}
+.heading-contents > .one > p{
+    color: var(--white);
+
+}
+.heading-contents > .one > .one-header{
+    line-height: 1;
+   margin-block: 3em;
+}
+

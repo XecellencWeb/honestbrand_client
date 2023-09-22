@@ -1,0 +1,45 @@
+.about-section, .background-curve-0001{
+    isolation: isolate;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    width:100%;
+    height: 100vh;
+    align-items: center;
+    margin-block: 20em;
+}
+.about-wrapper{
+}
+.about-wrapper > .one{
+    padding-inline: 2.5em;
+    width: min(70%,60em);
+    color: var(--white);
+    position: relative;
+    z-index: 1000;
+}
+.about-wrapper > .one > h1{
+    width: 70vw;
+    color: var(--black);
+    margin-block: 1em;
+}
+@media (min-width:30rem) {
+    .about-wrapper > .one > h1{
+        width: unset;
+    }
+}
+.about-wrapper > .two{
+    position: absolute;
+    right: clamp(-20em,15vw - 20em,0em);
+    bottom: 15em;
+}
+.about-wrapper > .two::before{
+    position: absolute;
+    bottom: 0;
+    left: -2%;
+    filter: blur(.25em);
+    content: '';
+    z-index: 500;
+    width: 120%;
+    height: 10em;
+    background-image: linear-gradient(to bottom, transparent, var(--background-main),var(--background-main));
+}

@@ -1,0 +1,26 @@
+.shape-0001-blur, .shape-0001-blur::after, .shape-0001-blur::before{
+    --white: hsl(0 0% 100%/.5);
+    position: absolute;
+    width: 20em;
+    height: 20em;
+    border-radius: 50%;
+    background-color: var(--white);
+    filter: blur(5em);
+    z-index: -1;
+}
+.shape-0001-blur::before, .shape-0001-blur::after{
+    --white: hsla(0, 34%, 86%, 0.5);
+    content: '';
+    width: 60em;
+    height: 60em;
+    top: 0em;
+    left: -80em;
+}
+.shape-0001-blur::after{
+    --white:  hsla(76, 92%, 61%, 0.5);
+    left: 30em;
+    width: 40em;
+    height: 40em;
+}
+
+

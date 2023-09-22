@@ -1,0 +1,20 @@
+:root{
+    --black: rgba(0, 0, 0, 0.123);
+    --dark: #333;
+    --default: hsl(0 2% 12%/.5);
+    --background-main: rgb(124, 124, 253);
+    --background-main--light:rgb(235, 235, 243);
+    --body--bg: white;
+    --white: #fff;
+    --primary: white;
+    --logo-color:var(--white);
+    --secondary: hsl(39, 98%, 68%);
+    --secondary-202: rgb(231, 199, 139);
+    --secondary101: hsl(120 100% 25%/ .3);
+    --accent: hsl(0 100% 50%/.3);
+    --accent-202:hsl(0, 91%, 27%);
+    --accent-soft: hsl(0 100% 50%/.12);
+    --white-102: #f5f0f0;
+    --white-101: #f9f9f9;
+    --white-103: #e0dede;
+}

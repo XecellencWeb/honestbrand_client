@@ -1,0 +1,71 @@
+.custom-shape-divider-bottom-1691403177 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1691403177 svg {
+    position: relative;
+    display: block;
+    width: calc(156% + 1.3px);
+    height: 351px;
+}
+
+.custom-shape-divider-bottom-1691403177 .shape-fill {
+    fill: #FFFFFF;
+}
+
+.border-sm{
+    border-width: 1px;
+}
+
+.hover\:border-sm:hover{
+    border-width: 1px;
+}
+
+.border-b-sm{
+    border-bottom-width: 1px;
+}
+
+.hover\:border-b-sm:hover{
+    border-bottom-width: 1px;
+}
+
+.wavy-curve{
+    color: white;
+    background: rgb(34,193,195);
+    background: linear-gradient(90deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    padding-block: 5em;
+           --mask:
+          radial-gradient(1.17vw at 50% 1.60vw,#000 99%,#0000 101%) calc(50% - 2vw) 0/4vw 51% repeat-x,
+          radial-gradient(1.17vw at 50% -0.6vw,#0000 99%,#000 101%) 50% 1vw/4vw calc(51% - 1vw) repeat-x,
+          radial-gradient(1.17vw at 50% calc(100% - 1.60vw),#000 99%,#0000 101%) calc(50% - 2vw) 100%/4vw 51% repeat-x,
+          radial-gradient(1.17vw at 50% calc(100% + 0.60vw),#0000 99%,#000 101%) 50% calc(100% - 1vw)/4vw calc(51% - 1vw) repeat-x;
+        -webkit-mask: var(--mask);
+                mask: var(--mask);
+      
+}
+
+.hover\:text_dark-pink:hover{
+    color: #9e0059 ;
+}
+.features_css{
+    padding-inline: 3rem;
+
+}
+.features_css > li{
+    margin-block: 3rem;
+}
+.features_css > ::marker{
+    font-size: 1.5rem;
+}
+.features_css h3{
+    font-family: rem,cursive;
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    color: #3f3e3e;
+}

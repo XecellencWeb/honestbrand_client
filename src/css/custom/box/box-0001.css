@@ -1,0 +1,126 @@
+.small-box{
+    background-color: var(--white-101);
+    max-width: 60em;
+    min-height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 1em;
+    margin-inline: auto;
+    box-shadow: -2em 0em 5em -4em var(--dark);
+}
+
+.small-box :is([type=text],[type=number],[type=password],textarea){
+    border: 2px solid var(--white-102);
+}
+
+.selected,.selected ~ svg{
+    fill: gold;
+}
+
+.custom-shape-divider-bottom-1692801413 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1692801413 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-bottom-1692801413 .shape-fill {
+    fill: #FFFFFF;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .custom-shape-divider-bottom-1692801413 svg {
+        width: calc(122% + 1.3px);
+        height: 103px;
+    }
+}
+
+.custom-shape-divider-bottom-1692801884 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1692801884 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-bottom-1692801884 .shape-fill {
+    fill: #FFFFFF;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .custom-shape-divider-bottom-1692801884 svg {
+        width: calc(166% + 1.3px);
+        height: 93px;
+    }
+}
+
+.custom-shape-divider-top-1692801960 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1692801960 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-top-1692801960 .shape-fill {
+    fill: #FFFFFF;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .custom-shape-divider-top-1692801960 svg {
+        width: calc(166% + 1.3px);
+        height: 93px;
+    }
+}
+
+.notice_animation{
+    animation: appear-disappear 9s forwards;
+}
+
+@keyframes appear-disappear {
+    0%{
+        opacity: 0;
+        translate: -200% 0;
+    }
+    10%{
+        opacity: 1;
+        translate: 0 0;
+    }
+    90%{
+        translate: 0 0;
+    }
+    100%{
+        translate: 200% 0;
+    }
+}

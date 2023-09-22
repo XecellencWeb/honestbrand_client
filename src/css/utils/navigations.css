@@ -1,0 +1,79 @@
+.normal-navigation{
+    --background-main: rgb(52, 52, 253);
+    width: 30vw;
+    display: flex;
+    align-items: flex-end;
+}
+.normal-navigation a{
+    color: var(--white);
+    text-decoration: none;
+    font-family: serif;
+    font-weight: 100;
+}
+
+
+
+
+.navigation{
+    display: none;
+    background-color: rgb(128, 128, 221);
+    padding: 3em;
+    transition: display 1.5s ease-in-out;
+    position: absolute;
+    top: min(5em,10vh);
+    right: 3em;
+    border-radius: .5em;
+    line-height: 2;
+}
+.normal-navigation li::marker{
+    color: var(--white);
+}
+
+#toggle-button{
+    display: none;
+}
+
+#toggle-button:checked ~ .navigation{
+    display: block;
+    
+}
+
+
+@media (min-width: 768px) {
+    .navigation{
+        padding: .5em 1em;
+        
+        top: 1em;
+        width: 70vw;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .navigation li a{
+        font-size: 1.5rem !important;
+    }
+   .navigation li{
+    position: relative;
+    display: inline-block;
+    list-style-type: none;
+    
+   }
+   .navigation>li::before{
+    content: '';
+    transform: scale(0,1) translateX(-50%);
+    transform-origin: left;
+    transition: transform 500ms;
+    width:calc(100% + 2em);
+    height: .5em;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+   }
+   
+   .navigation > li:hover::before , .nav-target::before{
+    content: '';
+    transform: scale(1,1) translateX(-50%) !important;
+    background-color: var(--white) !important;
+    border-radius: 1em;
+   }
+    
+}

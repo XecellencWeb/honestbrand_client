@@ -1,0 +1,22 @@
+.align-center{
+    width: 100%;
+    text-align: center;
+}
+.flex-centered-y,.flex-centered-x,.flex-centered,.flex-centered-row,.flex-centered-row-x,.flex-centered-row-y{
+    display: flex;
+    flex-direction: column;
+}
+.flex-centered-row,.flex-centered-row-x,.flex-centered-row-y{
+    flex-direction: row;
+}
+.flex-centered-y,.flex-centered-row-x{
+    align-items: center;
+}
+.flex-centered-x,.flex-centered-row-y{
+    justify-content: center;
+}
+.flex-centered{
+    align-items: center;
+    justify-content: center;
+}
+

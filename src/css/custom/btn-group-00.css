@@ -1,0 +1,34 @@
+.btn-group-0002{
+    position: absolute;
+    top: 5em;
+    right: min(.5vw,1.5em);
+    padding: 0 1em;
+    color: var(--white) !important;
+}
+.blue-on-hover:hover, .blue-on-hover:hover + p{
+    color: blue;
+}
+.btn-group-0002 > *{
+    padding: 0;
+    margin: 0;
+}
+.btn-group-0002 > .--profile-container{
+    margin-inline: 1em;
+    display: flex;
+    align-items: center;
+}
+.--profile-container >  *{
+    margin-inline: .2em;
+}
+.btn-group-0002 p{
+    
+    padding: 0 !important;
+}
+
+.unset{
+    all: unset;
+}
+
+.hover\:unset:hover{
+    all: unset;
+}

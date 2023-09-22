@@ -1,0 +1,19 @@
+.scroll--low-res::-webkit-scrollbar{
+    width: 5px;
+    height: 1em;
+}
+
+.scroll--low-res::-webkit-scrollbar-thumb{
+    background-color: rgba(128, 128, 128,.3);
+    cursor: pointer;
+    border-radius: 1em;
+}
+.scroll--low-res::-webkit-scrollbar-thumb:is(:focus,:hover){
+    background-color: rgba(128, 128, 128,.5);
+}
+@media (max-width:35em) {
+    .scroll--low-res::-webkit-scrollbar{
+        height: 0;
+    }
+    
+}
