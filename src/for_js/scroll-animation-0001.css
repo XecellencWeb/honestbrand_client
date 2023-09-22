@@ -1,0 +1,11 @@
+.left-right, .left-right *{
+    
+    transform: translateX(-100%);
+}
+.right-left, .right-left *{
+   
+    transform: translateX(100%);
+}
+.left-right,.right-left{
+    transition: transform 2s;
+}

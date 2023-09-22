@@ -1,0 +1,12 @@
+.--to-top{
+    position: fixed;
+    bottom: 2em;
+    left: 2em;
+    transition: all 1.5s;
+    opacity: .3;
+   
+}
+.--to-top:is(:focus,:hover){
+    opacity: 1;
+}
+

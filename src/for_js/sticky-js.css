@@ -1,0 +1,45 @@
+.sticky--js{
+    position: fixed !important;
+    top: 0 !important;
+    border: 2px solid red !important;
+}
+.head{
+    width: 20vw;
+    height: 20vw;
+}
+.head::after{
+    animation: head-movement 1.5s infinite;
+}
+@keyframes head-movement {
+    85%{
+        bottom: 70%;
+    }
+}
+.eye1::before,.eye2::before{
+   animation: eyemovement 1s infinite;
+}
+.eye2::before{
+  animation-duration: 1.2s;
+  animation-delay: 500ms;
+}
+.main--mouth{
+    font-size: 3vw;
+    animation: mouthmovement 2s infinite;
+}
+@keyframes mouthmovement {
+    85%{
+        font-size: 2.5vw;
+    }
+    
+}
+@keyframes eyemovement {
+    25%{
+        top: 60%;
+    }
+    50%{
+        left: 60%;
+    }
+    75%{
+        top: 30%;
+    }
+}
